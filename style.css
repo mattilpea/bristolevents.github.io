@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: darkturquoise;
+    font-family: 'segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: 450;
+}
+
+
+nav a:hover {
+    background-color: rgb(187, 187, 187);
+}
+
+nav li:first-child {
+    margin-right: auto;
+    font-weight: 600;
+}
+
+.logo{
+    margin-right: auto; /* Push the rest of the nav items to the right */
+    font-weight: 900 !important; /* Ensure bold weight */
+    font-size: 2em; /* Set the font size */
+    display: flex;
+    align-items: center; /* Vertically center the text */
+    justify-content: center; /* Horizontally center the text */
+    margin-top: -5px;
+    margin-left: -10px;
+    height: 50px; /* Ensures that it matches the nav bar height */
+    background-color: white;
+}
+
+.logo a:hover {
+    background-color: transparent; /* Prevent the hover effect */
+    color: black; /* Ensure text color remains black */
+}
+
+
+/* Sidebar hidden by default with right off-screen */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Off-screen when hidden */
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: right 0.3s ease-in-out; /* Add transition for smooth sliding */
+}
+
+.sidebar.open {
+    right: 0; /* Slide in when the class 'open' is added */
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+}
+
+/* Mobile view styles */
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+}
