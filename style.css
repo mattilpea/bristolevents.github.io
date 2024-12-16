@@ -1,0 +1,701 @@
+*{
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    
+}
+
+body {
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+@keyframes navBarFadeIn{
+    0% {background-color: none};
+    100% {background-color: black};
+}
+nav{
+    
+    width: 96%;    
+    justify-self: center;
+    height: 17vh;  
+    display: flex;
+    margin-left: 3%;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+
+
+nav span a {
+    text-decoration: none;
+    color: white;
+    font-family: "Titillium Web";
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;  
+    transition: color 0.3s, border-bottom 0.15s;
+    font-size: 3rem; 
+}
+
+nav span a:hover {
+    color: #ffffff; /* Change to any color you prefer */
+    border-bottom: 3px solid #ffffff; /* Underline effect */
+}
+
+
+.navBarDiv {
+    position: fixed; 
+    top: 0;
+    transition: background-color 0.5s ease-in-out; 
+    z-index: 3;
+    width: 100%;
+}
+ 
+.scrolled {
+    background-color: black; 
+}
+nav img{
+    
+    
+    align-self: center;
+}
+nav span{
+    
+   align-items: center;
+   justify-content: center;
+    padding: 1vw; 
+   
+    
+}
+.GetStartedButtonDiv{
+    
+    align-self: center;
+    margin-left: 13%;
+}
+
+.GetStartedButtonDiv button{
+    
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .1s;
+    border: 0px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+    color: #000000;
+    box-shadow: inset 0 0 0 2px #ffffff;
+    background-color: white;
+    height: 48px;
+    
+
+}
+.GetStartedButtonDiv button:hover{
+
+        color: #fff;
+        background-color: #000000;
+
+}
+
+.divspan{
+    
+    display: inline;
+    justify-content: center;
+    align-self: center;
+    margin-left: 10%;
+    padding: 2%;
+    
+    
+
+
+}
+
+nav span a{
+    
+   
+    text-decoration: none;
+    color: white;
+    font-family: "Titillium Web";
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.1rem;
+    
+}
+
+
+
+
+.HeadImage{
+    
+    background-image: url(images/diane-picchiottino-W_u4kvRFB6Y-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    margin-bottom: auto;
+    background-position: center;
+    overflow: hidden;
+    z-index: -1;  
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh; 
+
+}
+
+
+header h1{
+    animation: fadeIn 1.34s ease-in ;
+    color: rgb(236, 234, 234);
+    margin-top: 15%;
+
+    font-size: 10vw;
+    font-family: "Helvetica";
+    font-weight: 1;
+    
+}
+.belowHeading{
+    
+    color:  white;
+    position: absolute;
+    margin-top: 25%;
+    
+
+    
+}
+
+.belowHeading h3{
+    animation: fadeIn2header3 1s ease-in ;
+    font-family: "Helvetica";
+
+    
+    color: rgb(187, 187, 187);
+}
+
+.belowHeading button{
+    animation: fadeIn2button 1s ease-in ;
+    font-size: large;
+    appearance: none;
+  background-color: #b8b8b8;
+  opacity: 90%;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #020202;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 40px;
+  min-width: 0;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 70%;
+  will-change: transform;
+  margin-left: 23px;
+  margin-top: 3%;
+  
+}
+.belowHeading button:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+    opacity: 100%;
+    background-color: white;
+}
+.belowHeading button:active{
+    box-shadow: none;
+  transform: translateY(0);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; rotate: 3deg ;  }
+    50% { }
+    100% { opacity: 1; }
+  }
+
+  @keyframes fadeIn2button {
+    0% { opacity: 0%; rotate: 40deg ;  }
+    50% { }
+    100% { }
+  }
+  @keyframes fadeIn2header3 {
+    0% { opeacity:0%; rotate: 35deg ;  }
+    50% { }
+    100% { opeacity: 100%; }
+  }
+
+footer{
+    background-color: rgb(26, 26, 26);
+    width: 100%;
+    margin-top: auto;
+    height: 8vh;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(188, 86, 188);
+}
+
+.firstSection{
+    box-sizing: border-box;
+    width: 98vw;
+    justify-self: center;
+    background-color: rgb(251, 240, 221);
+    height: 500px;  
+    padding: 20px;
+    
+}
+.firstSectionTextDiv{
+    float: left;
+    
+    
+   
+} 
+
+
+.firstSectionTextDiv h4{ 
+    margin-top: 3%;  
+    padding-right: 35%;  
+    font-size: 1rem;
+    margin-left: 1%;  
+    color: #a2a2a2;
+}
+ 
+.section1Button2{
+   
+    font: 22px Arial;
+    display: inline-block;
+    padding: 0.5em; 
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+
+    
+    background: linear-gradient(to left, rgb(5, 5, 5) 50%, rgb(255, 253, 253) 50%) right;
+    background-size: 200%;
+    transition: .3s ease-out;
+    cursor: pointer; 
+}
+.section1Button2:hover{
+    background-position: left;
+    color: black;
+}
+
+
+.section1Button1{
+    margin-left: 0.5%; 
+    margin-top: 6%;  
+    font: 22px Arial;
+    display: inline-block;
+    padding: 0.5em; 
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+
+   
+    background: linear-gradient(to left, rgb(5, 5, 5) 50%, rgb(255, 253, 253) 50%) right;
+    background-size: 200%;
+    transition: .3s ease-out;
+    cursor: pointer; 
+}
+.section1Button1:hover{
+    background-position: left;
+    color: black;
+}
+
+
+.imageShow {
+    float: right;
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    align-self: center;
+    justify-self: center; 
+    
+}
+
+.imageShow img {
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes slideImages1 {
+    0% {
+        transform: translateX(100%);
+    }
+    33.33% {
+        transform: translateX(0);
+    }
+    66.66% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideImages2 {
+    0% {
+        transform: translateX(100%);
+    }
+    33.33% {
+        transform: translateX(0);
+    }
+    66.66% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideImages3 {
+    0% {
+        transform: translateX(100%);
+    }
+    33.33% {
+        transform: translateX(0);
+    }
+    66.66% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.imageShow img:nth-child(1) {
+    animation: slideImages1 6s infinite;
+}
+
+.imageShow img:nth-child(2) {
+    animation: slideImages2 6s infinite;
+    animation-delay: 2s;
+}
+
+.imageShow img:nth-child(3) {
+    animation: slideImages3 6s infinite;
+    animation-delay: 4s;
+}
+
+.contactBody h1,
+.contactBody button,
+.contactBody h3
+{
+    color: rgb(0, 0, 0); 
+}
+
+.contactBelowHeading a{
+    margin-left: 15%;
+}
+.contactBelowHeading a button{
+    margin-top: -1%;
+    min-height: 20px;     
+    width: 40%;
+
+}
+.contactBelowHeading h3{
+    font-size: 3rem;
+  }
+.contactHeader{
+    background-image: url(images/contact-us-photo.jpg);
+    background-position: 10% 10%;
+    background-size: 100%;  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    filter:brightness(70%); 
+}
+.contactHeader h1{
+    color: white;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 20px; 
+    width: 50%;
+    margin-top: 10%;
+    justify-self: center;
+    scale: 1.6;   
+    
+  }
+  .container h3{
+    justify-self: center;
+    margin-top: -5%;   
+    font-size: 2rem;
+    text-decoration: underline 1px;
+ 
+  }
+
+  
+  .contactBelowHeading a button{
+    height: 80px;
+    width: 50%;
+    font-size: 3rem;
+    margin-left: 10%;
+  }
+  .contactSuccess {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    font-size: 2rem;
+    background-color: white;
+    border: 2px solid green;
+    border-radius: 50px;
+    padding: 1%;
+    text-align: center;
+    display: none;
+}
+
+.contactSuccessVis {
+    display: block;
+}
+.contactFirstSection{
+    min-height: 1000px; 
+    align-content: center;
+}
+
+.container{
+    transform: translateY(-10%);
+}
+
+.headerEvents{
+    background-image: url(images/diane-picchiottino-1fwgyhHqfV8-unsplash.jpg);
+}
+.eventsfirstSection{
+    height: 100vh; 
+}
+.eventsfirstSection img{
+    float: left;
+    
+    margin-left: 2%; 
+    width: 1000px; 
+}
+.eventsfirstSection h1{
+    font-size: 6rem;  
+    
+    display: inline; 
+    
+ 
+    margin-right: 4%; 
+}
+
+.eventsfirstSection p{
+    margin-right: 17%;    
+    margin-left: 1%; 
+    font-size: 4rem;  
+    
+      
+    
+    line-height: 60px; 
+    color: gray;
+ }
+.eventsfirstSection button{
+    
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 17px 48px;
+    color: #000000;
+    background-color: #ffc090a1;
+    height: 60px;
+    
+
+}
+.eventsfirstSection button:hover{ 
+    transform: scale(1.04);
+    background-color: #00ff59;
+}
+.sectionText{ 
+    float: left;
+    margin-left: 2%;  
+    width: 1200px;     
+
+}
+
+.secondSection img{
+    float: right; 
+}
+
+.aboutUsHeader{
+    background-image: url(images/work-in-progress.jpg);
+    background-position: 50% 55%;  
+}   
+
+
+@media (max-width: 2350px){
+    .eventsfirstSection img{
+        height: 600px;
+        width: 900px;   
+        float: left;
+    }
+    .sectionText{
+        width: 90%; 
+    }
+}
+@media(max-width: 1100px) {
+    .sectionText h1{
+        font-size: 3rem; 
+    }
+   .sectionText p{
+    font-size: 1.1rem;
+    line-height: 30px;  
+    width: 50%;
+   }
+}
+@media(max-height: 500px){ 
+    .firstSection img{
+        height: 400px;
+        width: 600px;  
+    }
+}
+@media (min-width: 2082px) and (max-width: 2560px) and (min-height: 1000px) {
+    nav img{    
+        height: 50%; 
+    }
+
+    nav span{
+        padding: 1px;  
+    }
+    nav span a {
+        font-size: 2rem;  
+    }
+    nav span a:hover {
+        border-bottom: 8px solid white;   
+    }
+
+    .GetStartedButtonDiv button {
+        font-size: 28px; 
+        padding: 32px 28px 36px; 
+        min-width: 320px; 
+        height: 96px;  
+        letter-spacing: 4px; 
+    }
+    .belowHeading h3{
+        font-size: 3rem;
+    }
+    .belowHeading button{
+        font-size: 2rem; 
+        margin-left: 15%;    
+        padding-top: 10px;  
+        padding-bottom: 10px;    
+
+    }
+    .firstSection{
+        height: 80vh; 
+        
+
+    }
+    .firstSectionTextDiv h2{
+        font-size: 4rem;    
+    }
+
+    .firstSectionTextDiv h4{
+        font-size: 2rem;  
+
+    }
+    
+    .imageShow{
+        height: 1000px;  
+        width: 500px;    
+        border: 1px solid black; 
+        
+    }
+    .imageShow img{
+        height: 1000px;  
+        width: 500px; 
+    }
+    .section1Button1{
+        padding: 1em;  
+        font-size: 2rem; 
+        margin-left: 1%;
+        
+    }
+    .section1Button2{
+        margin-left: 1%;
+        padding: 1em;  
+        font-size: 2rem; 
+    }
+    .contactBelowHeading h3{
+        font-size: 4rem;
+      }
+}
